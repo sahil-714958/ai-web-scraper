@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  margin: 0 0 12px;
+  font-size: 42px;
+}
+
+.header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 17px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-row input:focus {
+  border-color: #2563eb;
+}
+
+.input-row button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.input-row button:hover {
+  background: #1d4ed8;
+}
+
+.input-row button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.loading {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.error {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.summary {
+  margin-top: 30px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 25px;
+}
+
+.summary h2 {
+  margin-top: 0;
+}
+
+.summary-content {
+  line-height: 1.7;
+  color: #374151;
+  white-space: pre-line;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .app {
+    padding: 30px 15px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .input-row button {
+    width: 100%;
+  }
+}
